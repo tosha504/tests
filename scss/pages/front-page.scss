@@ -1,0 +1,379 @@
+//MAIN
+.main {
+  background: url("/img/headertlo.jpg") no-repeat top center/cover;
+  padding: 250px 0;
+  position: relative;
+
+  @media (max-width: 600px) {
+    padding: 150px 0;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    @media (max-width: 600px) {
+      margin: 15px;
+    }
+  }
+}
+
+//UBEZPECZENIA
+.ubezpeczenia {
+  &__items {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 665px;
+    left: 50%;
+    max-width: 1000px;
+    width: 100%;
+    transform: translateX(-51%);
+
+    @media (max-width: 1024px) {
+      width: 50%;
+      top: 465px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 840px) {
+      top: 505px;
+    }
+
+    @media (max-width: 600px) {
+      top: 495px;
+    }
+
+    @media (max-width: 470px) {
+      top: 575px;
+    }
+  }
+
+  &__item {
+    background: #fff;
+    max-width: 220px;
+    width: 100%;
+    padding: 80px 10px;
+    text-align: center;
+    &_title {
+      text-align: center;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: 1024px) {
+      &:not(:last-child) {
+        border-right: 1px #ccc solid;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      border: 1px #ccc solid;
+    }
+
+    @media (max-width: 872px) {
+      padding: 40px 10px;
+    }
+  }
+}
+
+//MORE
+.more {
+  text-align: center;
+  background: $bacgroundColor;
+  &__button {
+    margin: 270px 0 100px 0;
+
+    @media (max-width: 1024px) {
+      margin: 300px 70px 0;
+    }
+
+    @media (max-width: 840px) {
+      margin: 200px 70px 0;
+    }
+    @media (max-width: 601px) {
+      margin: 270px 70px 0;
+    }
+  }
+}
+
+//ABOUT
+.about {
+  padding: 50px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 769px) {
+      flex-direction: column;
+    }
+  }
+
+  &__description,
+  &__image {
+    flex: 1 0 50%;
+  }
+
+  &__description {
+    padding: 60px 40px 40px 40px;
+    background: $bacgroundColor;
+    max-width: 450px;
+    width: 100%;
+    color: #000;
+    @media (max-width: 769px) {
+      padding: 20px 20px 20px 20px;
+    }
+  }
+  &__title,
+  &__text {
+    padding-right: 40px;
+    @media (max-width: 769px) {
+      padding-right: 0px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+
+  &__image {
+    max-width: 600px;
+    width: 100%;
+    margin-left: -50px;
+    @media (max-width: 769px) {
+      margin-left: 0px;
+    }
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+
+//DIFERENCE
+.differences {
+  background: $bacgroundColor;
+  padding: 75px 0;
+  &__title {
+    color: #000;
+    margin-bottom: 75px;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    @media (max-width: 922px) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    margin: 20px;
+    max-width: 250px;
+    width: 100%;
+    img {
+      width: 90px;
+    }
+    background: #fff;
+    text-align: center;
+    padding: 25px 50px;
+  }
+}
+
+//SEVICES
+.services {
+  &__container {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-right: 40px;
+    }
+  }
+
+  &__image {
+    @media (min-width: 1024px) {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__items {
+    @media (min-width: 1024px) {
+      flex: 0 1 50%;
+    }
+    &_title {
+      margin: 40px 0;
+    }
+    padding-right: 40px;
+    @media (max-width: 1024px) {
+      padding-right: 0px;
+    }
+
+    &_wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      @media (max-width: 769px) {
+        gap: 20px;
+      }
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  &__item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+
+    &_wrap {
+      display: flex;
+      align-items: baseline;
+      h4 {
+        color: #ba782d;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+    }
+
+    &_descriptuon {
+      font-size: 14px;
+    }
+  }
+
+  &__image {
+    max-height: 1000px;
+    height: 100%;
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 40px;
+    }
+  }
+}
+
+//OFERTA
+.offer {
+  background: $bacgroundColor;
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1125px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+    img {
+      max-width: 250px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+    }
+  }
+  @media (min-width: 1025px) {
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 6px;
+      background: linear-gradient(90deg, #fecb00a1 0%, #ba782d8c 100%);
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      opacity: 0;
+      transition: 0.2s;
+      p {
+        color: #fff;
+        text-align: center;
+        transform: translateY(51%);
+        font-size: 30px;
+        line-height: 40px;
+        display: block;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__overlay {
+    @media (max-width: 1025px) {
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+//
+.partners {
+  padding: 100px 0;
+  &__slide1 {
+    padding: 100px;
+    background: url("/img/partners/allianz.svg") no-repeat center;
+  }
+  &__slide2 {
+    background: url("/img/partners/aviva.svg") no-repeat center;
+    padding: 100px;
+  }
+  //   &__slide3 {
+  //     background: url("/img/partners/allianz.svg");
+  //   }
+  //   &__slide4 {
+  //     background: url("/img/partners/allianz.svg");
+  //   }
+}
+
+//CONTACTUS
+.contact {
+  background: url("/img/pasek.png") no-repeat top center/cover;
+  padding: 100px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300px" height="74px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 299.75 74.22"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil5 {fill:#6E6E6E}
+    .fil1 {fill:white}
+    .fil3 {fill:#501E82;fill-rule:nonzero}
+    .fil6 {fill:#6E6E6E;fill-rule:nonzero}
+    .fil0 {fill:#781E82;fill-rule:nonzero}
+    .fil2 {fill:#A50F82;fill-rule:nonzero}
+    .fil4 {fill:#EB007D;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Warstwa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2177820030336">
+   <polygon class="fil0" points="60.81,74.22 118.04,74.22 118.04,0 60.81,0 "/>
+   <polygon class="fil1" points="93.49,57.31 85.36,57.31 85.36,16.92 93.49,16.92 "/>
+   <polygon class="fil2" points="121.62,74.22 178.85,74.22 178.85,0 121.62,0 "/>
+   <polygon class="fil1" points="158.75,16.92 158.75,43.89 142.4,16.92 133.59,16.92 133.59,57.31 141.72,57.31 141.72,30.34 158.09,57.31 166.88,57.31 166.88,16.92 "/>
+   <polygon class="fil3" points="0,74.22 57.23,74.22 57.23,0 0,0 "/>
+   <polygon class="fil1" points="28.2,49.17 28.2,16.92 20.06,16.92 20.06,57.31 43.65,57.31 43.65,49.17 "/>
+   <polygon class="fil4" points="182.43,74.22 239.66,74.22 239.66,0 182.43,0 "/>
+   <polygon class="fil1" points="228.26,16.92 219.24,16.92 208.74,33.04 203.46,33.04 203.46,16.92 195.32,16.92 195.32,57.31 203.46,57.31 203.46,41.18 208.74,41.18 219.24,57.31 228.26,57.31 215.1,37.11 "/>
+   <path class="fil5" d="M270.57 43.05l-8.91 0 8.91 -13.87 0 13.87zm8.13 0l0 -26.13 -8.91 0 -16.96 26.13 0 8.14 17.74 0 0 6.12 8.13 0 0 -6.12 4.99 0 0 -8.14 -4.99 0z"/>
+   <polygon class="fil6" points="299.75,74.22 296.89,74.22 296.89,0 299.75,0 "/>
+  </g>
+ </g>
+</svg>
