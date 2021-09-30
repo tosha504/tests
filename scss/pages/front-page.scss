@@ -1,6 +1,6 @@
 //MAIN
 .main {
-  background: url("/img/headertlo.jpg") no-repeat top center/cover;
+  background: url("../img/headertlo.jpg") no-repeat top center/cover;
   padding: 250px 0;
   position: relative;
 
@@ -346,10 +346,10 @@
   padding: 100px 0;
   &__slide1 {
     padding: 100px;
-    background: url("/img/partners/allianz.svg") no-repeat center;
+    background: url("../img/partners/allianz.svg") no-repeat center;
   }
   &__slide2 {
-    background: url("/img/partners/aviva.svg") no-repeat center;
+    background: url("../img/partners/aviva.svg") no-repeat center;
     padding: 100px;
   }
   //   &__slide3 {
@@ -362,7 +362,7 @@
 
 //CONTACTUS
 .contact {
-  background: url("/img/pasek.png") no-repeat top center/cover;
+  background: url("../img/pasek.png") no-repeat top center/cover;
   padding: 100px 0;
   &__container {
     display: flex;
