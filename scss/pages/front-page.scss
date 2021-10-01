@@ -344,20 +344,25 @@
 //
 .partners {
   padding: 100px 0;
+  &__title {
+    margin-bottom: 100px;
+  }
+  .sliide {
+    padding: 150px;
+  }
+
   &__slide1 {
-    padding: 100px;
-    background: url("../img/partners/allianz.svg") no-repeat center;
+    background: url("/img/partners/hdi.svg") no-repeat center;
   }
   &__slide2 {
     background: url("../img/partners/aviva.svg") no-repeat center;
-    padding: 100px;
   }
-  //   &__slide3 {
-  //     background: url("/img/partners/allianz.svg");
-  //   }
-  //   &__slide4 {
-  //     background: url("/img/partners/allianz.svg");
-  //   }
+  &__slide3 {
+    background: url("/img/partners/bezpieczny.svg") no-repeat center;
+  }
+  &__slide4 {
+    // background: url("/img/partners/generali.svg") no-repeat center;
+  }
 }
 
 //CONTACTUS
