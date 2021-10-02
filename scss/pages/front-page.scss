@@ -165,6 +165,9 @@
 .differences {
   background: $bacgroundColor;
   padding: 75px 0;
+  @media (max-width: 769px) {
+    padding: 50px 0;
+  }
   &__title {
     color: #000;
     margin-bottom: 75px;
@@ -199,16 +202,10 @@
     display: flex;
     align-items: center;
     padding-left: 40px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1025px) {
       flex-wrap: wrap;
       justify-content: center;
       padding-right: 40px;
-    }
-  }
-
-  &__image {
-    @media (min-width: 1024px) {
-      flex: 0 1 50%;
     }
   }
 
@@ -226,10 +223,11 @@
 
     &_wrap {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+      grid-template-columns: repeat(2, 338px);
+      gap: 20px;
       @media (max-width: 769px) {
         gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
       }
       @media (max-width: 600px) {
         grid-template-columns: 1fr;
@@ -238,7 +236,6 @@
   }
 
   &__item {
-    margin: 10px;
     display: flex;
     flex-direction: column;
     flex: 0 1 50%;
@@ -246,6 +243,7 @@
     &_wrap {
       display: flex;
       align-items: baseline;
+      margin-bottom: 10px;
       h4 {
         color: #ba782d;
         font-size: 16px;
@@ -255,15 +253,18 @@
 
     &_descriptuon {
       font-size: 14px;
+      line-height: 20px;
     }
   }
 
   &__image {
-    max-height: 1000px;
-    height: 100%;
     img {
       object-fit: cover;
-      object-position: center;
+      object-position: left;
+      min-height: 700px;
+      @media (max-width: 1024px) {
+        min-height: 0px;
+      }
     }
     @media (max-width: 1024px) {
       margin-top: 40px;
@@ -275,6 +276,9 @@
 .offer {
   background: $bacgroundColor;
   padding: 100px 0;
+  @media (max-width: 769px) {
+    padding: 50px 0;
+  }
 
   &__title {
     margin-bottom: 50px;
@@ -369,6 +373,10 @@
 .contact {
   background: url("../img/pasek.png") no-repeat top center/cover;
   padding: 100px 0;
+  @media (max-width: 769px) {
+    padding: 50px 0;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -380,5 +388,9 @@
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
+    @media (max-width: 769px) {
+      font-size: 27px;
+      line-height: 33px;
+    }
   }
 }
