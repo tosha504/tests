@@ -17,7 +17,7 @@
 
   &__top {
     &_container {
-      max-width: 1350px;
+      max-width: 1285px;
       display: flex;
       justify-content: flex-end;
     }
@@ -40,14 +40,86 @@
 
     .navigation {
       display: flex;
+      @media (max-width: 426px) {
+        display: flex;
+        padding: 50px 0;
+        background: linear-gradient(186deg, #fecb0071 0%, #b9762e 100%);
+        position: fixed;
+        right: -100%;
+        top: 0;
+        bottom: 0;
+        z-index: 20;
+        text-align: center;
+        flex-direction: column;
+        overflow: auto;
+        transition: all 0.5s ease 0s;
 
-      li:not(:last-child) {
-        margin-right: 30px;
+        &__link {
+          margin: 10px 0;
+        }
+        &.active {
+          right: 0;
+          @media (max-width: 426px) {
+            width: 80%;
+          }
+        }
+      }
+
+      @media (min-width: 426px) {
+        li:not(:last-child) {
+          margin-right: 30px;
+        }
       }
 
       &__link {
         text-transform: uppercase;
       }
+    }
+  }
+
+  &__burger {
+    z-index: 21;
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transition: 0.4s;
+    margin: 10px;
+
+    &:before,
+    &:after {
+      background: #fff;
+    }
+
+    &:before {
+      position: absolute;
+      top: 8px;
+      content: "";
+      width: 30px;
+      height: 3px;
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 8px;
+      content: "";
+      width: 30px;
+      height: 3px;
+    }
+
+    &.active {
+      transform: rotate(-40deg);
+      &:before {
+        opacity: 0;
+      }
+      &::after {
+        transform: rotate(85deg);
+        bottom: 0px;
+      }
+    }
+    @media (max-width: 426px) {
+      display: block;
     }
   }
 }
