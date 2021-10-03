@@ -348,24 +348,19 @@
 //
 .partners {
   padding: 100px 0;
-  &__title {
-    margin-bottom: 100px;
-  }
-  .sliide {
-    padding: 150px;
+  @media (max-width: 769px) {
+    padding: 50px 0;
   }
 
-  &__slide1 {
-    background: url("/img/partners/hdi.svg") no-repeat center;
+  &__title {
+    margin-bottom: 100px;
+    @media (max-width: 769px) {
+      margin-bottom: 50px;
+    }
   }
-  &__slide2 {
-    background: url("../img/partners/aviva.svg") no-repeat center;
-  }
-  &__slide3 {
-    background: url("/img/partners/bezpieczny.svg") no-repeat center;
-  }
-  &__slide4 {
-    // background: url("/img/partners/generali.svg") no-repeat center;
+
+  .slide {
+    margin: 20px;
   }
 }
 

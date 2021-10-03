@@ -26,14 +26,14 @@
           </div>
           <div class="header__bottom_navigation">
             <ul class="navigation">
-              <li class="navigation__link">
-                <a href="#">o nas</a>
+              <li>
+                <a class="navigation__link" href="#about">o nas</a>
               </li>
-              <li class="navigation__link">
-                <a href="#">oferta</a>
+              <li>
+                <a class="navigation__link" href="#offer">oferta</a>
               </li>
-              <li class="navigation__link">
-                <a href="#">kontakt</a>
+              <li>
+                <a class="navigation__link" href="#contact">kontakt</a>
               </li>
             </ul>
             <div class="header__burger"></div>
@@ -115,7 +115,7 @@
     <!-- SECTION WIĘCEJ END -->
 
     <!-- SECTION O NAS START -->
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <div class="about__description">
           <h4>O nas</h4>
@@ -258,7 +258,7 @@
     <!-- SECTION SERVICES END -->
 
     <!-- SECTION OFERTA START -->
-    <section class="offer">
+    <section id="offer" class="offer">
       <div class="container">
         <h3 class="offer__title title">Nasza Oferta</h3>
         <div class="offer__items">
@@ -287,16 +287,48 @@
     <section class="partners">
       <h3 class="partners__title title">Nasi partnerzy</h3>
       <div class="partners__slider">
-        <div class="partners__slide1 slide"></div>
-        <div class="partners__slide2 slide"></div>
-        <div class="partners__slide3 slide"></div>
-        <div class="partners__slide4 slide"></div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/interrisk.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/pocztowe.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/polisa życie.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/proama.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/prudential.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/pzu-logo.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/smart.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/tuw.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/tuz.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/uniqa.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/warta.svg" alt="" />
+        </div>
+        <div class="partners__slide slide">
+          <img src="/img/partners/wiener.svg" alt="" />
+        </div>
       </div>
     </section>
     <!-- SECTION PARNERZY END -->
 
     <!-- SECTION CONTACTUS START -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contact__container container">
         <h2 class="contact__title">
           Skontaktuj się z nami! To zajmie tylko chwilę!
@@ -308,7 +340,12 @@
     </section>
     <!-- SECTION CONTACTUS END -->
 
+    <div class="arrowUp">
+      &#8679;
+    </div>
+
     <script src="./libs/jquery-3.5.0.min.js"></script>
+    <script src="./libs/jquery.ba-throttle-debounce.min.js"></script>
     <script src="./libs/slick.min.js"></script>
     <script src="./src/index.js"></script>
   </body>

@@ -83,3 +83,24 @@ img {
   text-align: center;
   color: rgb(133, 131, 131);
 }
+
+.arrowUp {
+  font-size: 35px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: $accentColor;
+  cursor: pointer;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 19;
+  color: #fff;
+
+  &.active {
+    display: flex;
+  }
+}
